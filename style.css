@@ -13,7 +13,10 @@
   padding: 0px;
   box-sizing: border-box;
 }
-
+.width-container{
+  width: 80%;
+  margin: 0px auto;
+}
 .display-flex{
   display: flex;
 }
@@ -46,7 +49,7 @@
 /* Header part section styles */
 .header-section{
   background-color: rgba(255, 144, 14, 0.1);
-  
+  padding-bottom: 20px;
 }
 
 
@@ -54,8 +57,7 @@
 .navbar{
   justify-content: space-between;
   align-items: center;
-  width: 80%;
-  margin: 0px auto;
+  padding: 20px 0px;
 }
 .brand-title{
   font-weight: bold;
@@ -66,6 +68,7 @@
   margin-right: 40px;
 }
 .menu-link{
+  color: #727272;
   text-decoration: none;
   font-size: 0.9rem;
 }
@@ -74,9 +77,9 @@
 /* Banner Section Design */
 .banner-content-container{
   max-width: 500px;
-  margin: 0px auto;
+  margin: 40px auto;
   text-align: center;
-  margin-bottom: 60px;
+  /* margin-bottom: 60px; */
 }
 .banner-title{
   font-size: 3.5rem;
@@ -108,5 +111,54 @@
   }
   .menu-item{
     margin-left: 20px;
+  }
+}
+
+
+
+
+/* Team features section design */
+.features-content-container{
+  align-items: center;
+  gap: 40px;
+  margin-top: 60px;
+}
+.team-image-container{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+}
+
+.team-text-container{
+  max-width: 570px;
+}
+.team-features-title{
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #131313;
+}
+#quick-list{
+  font-weight: 500;
+  color: #727272;
+}
+#features-text{
+  color: #FF900E;
+}
+.team-features-subtitle{
+  margin: 24px 0px;
+}
+
+/* Team features section Responsive design */
+@media screen and (max-width: 992px) {
+  .features-content-container{
+    flex-direction: column;
+  }
+  .team-text-container{
+    margin-left: 30px;
+  }
+}
+@media screen and (max-width: 768px) {
+  .team-image-container{
+    grid-template-columns: repeat(1, 1fr);
   }
 }

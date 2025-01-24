@@ -6,3 +6,107 @@
   font-weight: 400;
   font-style: normal;
 }
+
+/* global styles  */
+*{
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+.display-flex{
+  display: flex;
+}
+
+
+.text-title-color{
+  /* Dark-1 */
+  color: #131313;        
+}
+.text-color-light{
+  /* Dark-2  */
+  color: #424242;
+}
+.text-subtitle-color{
+  /* Dark-3 */
+  color: #727272;
+}
+.primary-button{
+  color: #FFFFFF;
+  font-size: 1.2rem;
+  font-weight: 600;
+  background-color: #FF900E;
+  padding: 10px 20px;
+  border-radius: 8px;
+  border: none;
+}
+
+
+
+/* Header part section styles */
+.header-section{
+  background-color: rgba(255, 144, 14, 0.1);
+  
+}
+
+
+/* Navbar section styles start  */
+.navbar{
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: 0px auto;
+}
+.brand-title{
+  font-weight: bold;
+  font-size: 2rem;
+}
+.menu-item{
+  list-style: none;
+  margin-right: 40px;
+}
+.menu-link{
+  text-decoration: none;
+  font-size: 0.9rem;
+}
+
+
+/* Banner Section Design */
+.banner-content-container{
+  max-width: 500px;
+  margin: 0px auto;
+  text-align: center;
+  margin-bottom: 60px;
+}
+.banner-title{
+  font-size: 3.5rem;
+}
+.banner-subtitle{
+  font-size: 1rem;
+  margin: 20px 0px;
+}
+.banner-image{
+  width: 100%;
+}
+
+/* Header Part Responsive Design */
+@media screen and (max-width: 730px) {
+  .brand-title{
+    font-size: 1.5rem;
+  }
+  .menu-item{
+    margin-right: 20px;
+  }
+  .banner-title{
+    font-size: 2.5rem;
+  }
+}
+
+@media screen and (max-width: 576px) {
+  .navbar{
+    flex-direction: column;
+  }
+  .menu-item{
+    margin-left: 20px;
+  }
+}
